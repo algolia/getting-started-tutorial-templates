@@ -128,11 +128,7 @@ const Hits = ({ hits }) => {
                     {data[type].columns.map(({ attribute, isHighlighted }) => (
                       <td key={attribute}>
                         {isHighlighted ? (
-                          <Highlight
-                            attribute={attribute}
-                            hit={row}
-                            tagName="mark"
-                          />
+                          <Highlight attribute={attribute} hit={row} />
                         ) : (
                           <span>{row[attribute]}</span>
                         )}
