@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { InstantSearch } from 'react-instantsearch/dom';
+import { InstantSearch, RefinementList, Panel } from 'react-instantsearch/dom';
 import PropTypes from 'prop-types';
 import './App.css';
 
@@ -13,7 +13,11 @@ class App extends Component {
       >
         <main className="search-container">
           <div className="left-panel">
-            <div id="type">RefinementList</div>
+            <div id="type">
+              <Panel header="Categories">
+                <RefinementList attribute="type" />
+              </Panel>
+            </div>
           </div>
           <div className="right-panel">
             <div id="searchbox">SearchBox</div>

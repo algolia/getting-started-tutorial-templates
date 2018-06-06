@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
   box-sizing: border-box;
 }
@@ -154,7 +156,7 @@ a {
   flex-grow: 1;
 }
 
-.ais-refinement-list__header {
+.ais-Panel-header {
   font-weight: bolder;
   margin: 0;
   padding: 0 16px 8px;
@@ -163,24 +165,29 @@ a {
   border-bottom: 1px solid #eee;
 }
 
-.ais-refinement-list__list {
+.ais-RefinementList-list {
   padding-top: 8px;
 }
 
-.ais-refinement-list__item {
+.ais-RefinementList-item {
   padding: 8px 16px;
 }
 
-.ais-refinement-list__label,
-.ais-refinement-list__label:hover {
+.ais-RefinementList-label {
+  display: block;
   color: black;
 }
 
-.ais-refinement-list__checkbox {
-  margin: 0;
+.ais-RefinementList-label:hover {
+  cursor: pointer;
 }
 
-.ais-refinement-list__count {
+.ais-RefinementList-checkbox {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.ais-RefinementList-count {
   background: none;
   padding: 0;
   font-size: 12px;
@@ -189,9 +196,9 @@ a {
   float: right;
 }
 
-.ais-refinement-list__item--active .ais-refinement-list__label,
-.ais-refinement-list__item--active .ais-refinement-list__count {
-  font-weight: normal;
+.ais-RefinementList-item--selected .ais-RefinementList-label,
+.ais-RefinementList-item--selected .ais-RefinementList-count {
+  font-weight: 700;
 }
 
 footer {
