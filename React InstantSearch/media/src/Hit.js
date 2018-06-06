@@ -1,38 +1,48 @@
 import React from 'react';
-import {Highlight, Snippet} from 'react-instantsearch-dom';
+import PropTypes from 'prop-types';
+import { Highlight, Snippet } from 'react-instantsearch-dom';
 
-export default ({hit}) => <div>
-<article>
-  <div className="post-img">
-    <a href={hit.permalink}>
-      <img src={hit.image} />
-    </a>
-  </div>
-  <div className="post-content">
-    <div className="post-date">
-      {hit.post_date_formatted}
-    </div>
-    <h2 className="entry-title">
-      <a href={hit.permalink} rel="bookmark">
-        <Highlight attribute="post_title" hit={hit} tagName="mark" />
-      </a>
-    </h2>
-    <div className="post-excerpt">
-      <Snippet attribute="content" hit={hit} />
-    </div>
-    <div className="entry-meta clear">
-      <div className="author-gravatar">
-        <img src={hit.author_image_url} width="40" height="40" />
-      </div>
-      <div className="entry-author-content">
-        <div className="author-name">
-          <Highlight attribute="author_name" hit={hit} tagName="mark" />
+export default Hit;
+
+function Hit({ hit }) {
+  return (
+    <div>
+      <article>
+        <div className="post-img">
+          <a href={hit.permalink}>
+            <img src={hit.image} />
+          </a>
         </div>
-        <div className="post-meta-info">
-          {hit.time_to_read} min read in <Highlight attribute="categories" hit={hit} tagName="mark" />
+        <div className="post-content">
+          <div className="post-date">{hit.post_date_formatted}</div>
+          <h2 className="entry-title">
+            <a href={hit.permalink} rel="bookmark">
+              <Highlight attribute="post_title" hit={hit} tagName="mark" />
+            </a>
+          </h2>
+          <div className="post-excerpt">
+            <Snippet attribute="content" hit={hit} />
+          </div>
+          <div className="entry-meta clear">
+            <div className="author-gravatar">
+              <img src={hit.author_image_url} width="40" height="40" />
+            </div>
+            <div className="entry-author-content">
+              <div className="author-name">
+                <Highlight attribute="author_name" hit={hit} tagName="mark" />
+              </div>
+              <div className="post-meta-info">
+                {hit.time_to_read} min read in{' '}
+                <Highlight attribute="categories" hit={hit} tagName="mark" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
-</article>
-</div>
+  );
+}
+
+Hit.propTypes = {
+  hit: PropTypes.object.isRequired,
+};
