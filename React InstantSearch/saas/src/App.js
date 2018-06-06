@@ -6,7 +6,6 @@ import {
   Panel,
   SearchBox,
 } from 'react-instantsearch-dom';
-import PropTypes from 'prop-types';
 import Stats from './Stats';
 import Switch from './Switch';
 import Hits from './Hits';
@@ -52,17 +51,5 @@ class App extends Component {
     );
   }
 }
-
-function Hit(props) {
-  return (
-    <div>
-      <code>{JSON.stringify(props.hit)}</code>
-    </div>
-  );
-}
-
-Hit.propTypes = {
-  hit: PropTypes.object.isRequired,
-};
 
 export default App;
