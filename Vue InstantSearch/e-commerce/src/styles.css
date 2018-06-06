@@ -353,8 +353,8 @@ a {
   flex-wrap: wrap;
 }
 
-.ais-pagination--item,
-.ais-pagination--item__disabled {
+.ais-pagination__item,
+.ais-pagination__item--disabled {
   flex: 0 0 40px;
   width: auto;
   height: auto;
@@ -368,17 +368,18 @@ a {
   transition: all 0.1s linear;
 }
 
-.ais-pagination--item__disabled {
+.ais-pagination__item--disabled {
   display: none;
 }
 
-.ais-pagination--item:hover,
-.ais-pagination--item__active {
+.ais-pagination__item:hover,
+.ais-pagination__item--active {
   background-color: #3a46a1;
 }
 
-.ais-pagination--item .ais-pagination--link,
-.ais-pagination--item__disabled .ais-pagination--link {
+.ais-pagination__item .ais-pagination__link,
+.ais-pagination__item--disabled .ais-pagination__link {
+  padding: 6px 16px;
   text-decoration: none;
   color: #fff;
   line-height: 32px;

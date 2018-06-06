@@ -84,19 +84,7 @@
           </ais-results>
         </div>
         <div id="pagination">
-          <ais-pagination
-            :class-names="{
-              'ais-pagination': 'ais-pagination',
-              'ais-pagination__item': 'ais-pagination--item',
-              'ais-pagination__item--next': 'ais-pagination-item__next',
-              'ais-pagination__item--previous': 'ais-pagination-item__previous',
-              'ais-pagination__item--disabled': 'ais-pagination--item__disabled',
-              'ais-pagination__item--first': 'ais-pagination--item__first',
-              'ais-pagination__item--last': 'ais-pagination--item__last',
-              'ais-pagination__link': 'ais-pagination--link',
-              'ais-pagination__item--active': 'ais-pagination--item__active'
-            }"
-          >
+          <ais-pagination>
             <template slot="first">«</template>
             <template slot="previous">‹</template>
             <template slot="next">›</template>
