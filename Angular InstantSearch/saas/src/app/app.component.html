@@ -1,20 +1,19 @@
-
-  <ais-instantsearch [config]="config">
-<main class="search-container">
+<ais-instantsearch [config]="config">
+  <main class="search-container">
     <div class="left-panel">
       <ais-panel header="Categories" id="type">
-        <ais-refinement-list
-          attribute="type"
-        >
+        <ais-refinement-list attribute="type">
         </ais-refinement-list>
       </ais-panel>
-      
+
     </div>
     <div class="right-panel">
-      <ais-search-box placeholder="Search your CRM"></ais-search-box>
+      <ais-search-box placeholder="Search your CRM" id="searchbox"></ais-search-box>
       <ais-stats id="stats">
         <ng-template let-state="state">
-          ⚡️ <strong>{{state.nbHits}}</strong> results found in <strong>{{state.processingTimeMS}}ms</strong>
+          ⚡️
+          <strong>{{state.nbHits}}</strong> results found in
+          <strong>{{state.processingTimeMS}}ms</strong>
         </ng-template>
       </ais-stats>
       <ais-hits [transformItems]="groupByType">
@@ -24,14 +23,18 @@
             No results found matching
             <strong>{{results.query}}</strong>.
           </div>
-        
+
 
           <div class="hit" *ngIf="hits['Contact']">
             <h2>Contacts</h2>
             <div class="table-responsive">
               <table>
                 <tbody>
-                  <tr><th>Name</th><th>Account</th><th>Email</th></tr>
+                  <tr>
+                    <th>Name</th>
+                    <th>Account</th>
+                    <th>Email</th>
+                  </tr>
                   <tr *ngFor="let hit of hits['Contact']">
                     <td>
                       <ais-highlight attribute="Name" [hit]="hit">
@@ -56,7 +59,14 @@
             <div class="table-responsive">
               <table>
                 <tbody>
-                  <tr><th>Name</th><th>Account</th><th>Owner</th><th>CloseDate</th><th>StageName</th><th>Amount</th></tr>
+                  <tr>
+                    <th>Name</th>
+                    <th>Account</th>
+                    <th>Owner</th>
+                    <th>CloseDate</th>
+                    <th>StageName</th>
+                    <th>Amount</th>
+                  </tr>
                   <tr *ngFor="let hit of hits['Opportunity']">
                     <td>
                       <ais-highlight attribute="Name" [hit]="hit">
@@ -92,7 +102,11 @@
             <div class="table-responsive">
               <table>
                 <tbody>
-                  <tr><th>Name</th><th>Website</th><th>Owner</th></tr>
+                  <tr>
+                    <th>Name</th>
+                    <th>Website</th>
+                    <th>Owner</th>
+                  </tr>
                   <tr *ngFor="let hit of hits['Account']">
                     <td>
                       <ais-highlight attribute="Name" [hit]="hit">
@@ -117,7 +131,11 @@
             <div class="table-responsive">
               <table>
                 <tbody>
-                  <tr><th>Name</th><th>Email</th><th>Owner</th></tr>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Owner</th>
+                  </tr>
                   <tr *ngFor="let hit of hits['Lead']">
                     <td>
                       <ais-highlight attribute="Name" [hit]="hit">
@@ -139,7 +157,9 @@
         </ng-template>
       </ais-hits>
     </div>
-</main>
-  </ais-instantsearch>
-<footer>Source Code on <a href="#">Github</a> - Powered by <a href="https://www.algolia.com">Algolia</a>
+  </main>
+</ais-instantsearch>
+<footer>Source Code on
+  <a href="#">Github</a> - Powered by
+  <a href="https://www.algolia.com">Algolia</a>
 </footer>
