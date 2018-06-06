@@ -44,20 +44,14 @@
       </div>
       <div class="right-panel">
         <div id="searchbox">
-          <ais-search-box
-            placeholder="Search for products"
-            class="ais-search-box"
-            :class-names="{
-              'ais-input': 'ais-search-box--input',
-              'ais-clear': 'ais-search-box--reset',
-              'ais-clear--disabled': 'ais-SearchBox-reset--disabled',
-              'ais-search-box__submit': 'ais-search-box--magnifier'
-            }"></ais-search-box>
+          <ais-search-box placeholder="Search for products" class="ais-search-box"/>
         </div>
         <div id="stats">
           <ais-stats>
             <template slot-scope="{ totalResults, processingTime, query, resultStart, resultEnd }">
-              ⚡️ <strong>{{ totalResults }}</strong> results found <span v-if="query !== ''">for <strong>"{{ query }}"</strong></span> in <strong>{{ processingTime }}ms</strong>
+              ⚡️ <strong>{{ totalResults }}</strong> results found
+              <span v-if="query !== ''">for <strong>"{{ query }}"</strong></span>
+              in <strong>{{ processingTime }}ms</strong>
             </template>
           </ais-stats>
         </div>

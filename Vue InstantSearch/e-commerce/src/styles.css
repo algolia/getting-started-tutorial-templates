@@ -67,14 +67,14 @@ a {
 #categories,
 #brands,
 .ais-hits--item,
-.ais-search-box--input {
+.ais-input {
   height: auto;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.ais-search-box--input:focus {
+.ais-input:focus {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -105,8 +105,8 @@ a {
   width: 100%;
 }
 
-.ais-search-box--magnifier,
-.ais-search-box--reset {
+.ais-search-box__submit,
+.ais-clear {
   position: absolute;
   top: 0;
   left: inherit;
@@ -117,37 +117,37 @@ a {
   cursor: pointer;
 }
 
-.ais-SearchBox-reset--disabled {
+.ais-clear--disabled {
   display: none;
 }
 
-.ais-search-box--magnifier svg,
-.ais-search-box--reset svg {
+.ais-search-box__submit svg,
+.ais-clear svg {
   width: 13px;
   height: 13px;
   display: block;
 }
 
-.ais-search-box--magnifier svg {
+.ais-search-box__submit svg {
   fill: #5468ff;
 }
 
-.ais-search-box--reset svg {
+.ais-clear svg {
   fill: #ed5a6a;
 }
 
-.ais-search-box--magnifier {
+.ais-search-box__submit {
   right: 0;
 }
 
-.ais-search-box--reset {
+.ais-clear {
   background: none;
   padding: 0;
   border: none;
   right: 30px;
 }
 
-.ais-search-box--input {
+.ais-input {
   width: 100%;
   padding: 8px 16px;
   font-weight: normal;
