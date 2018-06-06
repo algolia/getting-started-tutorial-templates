@@ -23,4 +23,4 @@ This repository holds the templates used in Algolia's [getting started tutorial]
   - [InstantSearch.js](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/InstantSearch.js/geo) ✅
   - [React InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/React%20InstantSearch/geo) ⏳
   - [Vue InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Vue%20InstantSearch/geo) ⏳
-  - [Angular InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Angular%20InstantSearch/geo) ⏳
+  - [Angular InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Angular%20InstantSearch/geo) ✅
