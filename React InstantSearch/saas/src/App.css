@@ -44,24 +44,6 @@ a {
   }
 }
 
-#type {
-  margin-right: 24px;
-  padding: 8px 0;
-}
-
-#type,
-.hit,
-.ais-input {
-  height: auto;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-.ais-input:focus {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
 .left-panel {
   flex: 0 0 240px;
 }
@@ -71,6 +53,20 @@ a {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+#type {
+  margin-right: 24px;
+  padding: 8px 0;
+}
+
+#type,
+.hit,
+.ais-SearchBox-input {
+  height: auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 #searchbox {
@@ -83,16 +79,41 @@ a {
   flex-grow: 0;
 }
 
-.ais-search-box__form {
+.ais-SearchBox-form {
   position: relative;
   height: auto;
   width: 100%;
 }
 
-.ais-search-box__submit,
-.ais-clear {
+.ais-SearchBox-input {
+  width: 100%;
+  padding: 8px 16px;
+  font-weight: normal;
+  border: none;
+  font: inherit;
+}
+
+.ais-SearchBox-input:focus {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ais-SearchBox-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
   position: absolute;
   top: 0;
+  left: inherit;
+  margin: 14px 16px;
+  cursor: pointer;
+}
+
+.ais-SearchBox-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
   left: inherit;
   margin: 14px 16px;
   padding: 0;
@@ -101,44 +122,26 @@ a {
   border: none;
 }
 
-.ais-search-box__submit svg,
-.ais-clear svg {
+.ais-SearchBox-reset {
+  background: none;
+  padding: 0;
+  border: none;
+  right: 30px;
+}
+
+.ais-SearchBox-submitIcon,
+.ais-SearchBox-resetIcon {
   width: 13px;
   height: 13px;
   display: block;
 }
 
-.ais-search-box__submit svg {
+.ais-SearchBox-submitIcon {
   fill: #5468ff;
 }
 
-.ais-clear svg {
+.ais-SearchBox-resetIcon {
   fill: #ed5a6a;
-}
-
-.ais-search-box__submit {
-  right: 0;
-}
-
-.ais-clear {
-  right: 30px;
-}
-
-.ais-clear--disabled {
-  display: none;
-}
-
-.ais-input {
-  width: 100%;
-  padding: 8px 16px;
-  font-weight: normal;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.ais-input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
 }
 
 #stats {

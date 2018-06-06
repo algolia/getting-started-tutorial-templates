@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { InstantSearch, RefinementList, Panel } from 'react-instantsearch/dom';
+import {
+  InstantSearch,
+  RefinementList,
+  Panel,
+  SearchBox,
+} from 'react-instantsearch/dom';
 import PropTypes from 'prop-types';
 import './App.css';
 
@@ -20,7 +25,9 @@ class App extends Component {
             </div>
           </div>
           <div className="right-panel">
-            <div id="searchbox">SearchBox</div>
+            <div id="searchbox">
+              <SearchBox translations={{ placeholder: 'Search in your CRM' }} />
+            </div>
             <div id="stats">Stats</div>
             <div id="hits">Hits</div>
           </div>
