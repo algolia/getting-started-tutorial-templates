@@ -17,7 +17,7 @@ function Hit({ hit }) {
           <div className="post-date">{hit.post_date_formatted}</div>
           <h2 className="entry-title">
             <a href={hit.permalink} rel="bookmark">
-              <Highlight attribute="post_title" hit={hit} tagName="mark" />
+              <Highlight attribute="post_title" hit={hit} tagName="em" />
             </a>
           </h2>
           <div className="post-excerpt">
@@ -29,11 +29,11 @@ function Hit({ hit }) {
             </div>
             <div className="entry-author-content">
               <div className="author-name">
-                <Highlight attribute="author_name" hit={hit} tagName="mark" />
+                <Highlight attribute="author_name" hit={hit} tagName="em" />
               </div>
               <div className="post-meta-info">
                 {hit.time_to_read} min read in{' '}
-                <Highlight attribute="categories" hit={hit} tagName="mark" />
+                <Highlight attribute="categories" hit={hit} tagName="em" />
               </div>
             </div>
           </div>
