@@ -4,13 +4,13 @@ export default connectStateResults(({ searchResults }) => {
   if (searchResults === null) return null;
   return (
     <div className="ais-Stats">
-      ⚡️ <strong>{searchResults.nbHits}</strong>{' '}
+      ⚡️ <strong>{searchResults.nbHits}</strong> results found{' '}
       {searchResults.query !== '' && (
         <React.Fragment>
           for <strong>{`"${searchResults.query}"`}</strong>
         </React.Fragment>
       )}{' '}
-      results found in <strong>{searchResults.processingTimeMS}ms</strong>
+      in <strong>{searchResults.processingTimeMS}ms</strong>
     </div>
   );
 });

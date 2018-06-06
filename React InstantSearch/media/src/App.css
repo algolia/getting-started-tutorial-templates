@@ -20,19 +20,24 @@ body {
   font-size: 14px;
   line-height: 24px;
   overflow-y: scroll;
-  display: flex;
   font-family: "Open Sans", sans-serif;
   background: #f0f2f5;
-  flex-direction: column;
 }
 
 a {
   color: #5468ff;
 }
 
-.ais-Highlight-highlighted {
+.ais-Highlight-highlighted,
+.ais-Snippet-highlighted {
   font-style: normal;
   font-weight: bold;
+}
+
+.ais-InstantSearch__root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-container {
@@ -134,6 +139,9 @@ a {
   padding: 8px 16px;
   font-weight: normal;
   border: none;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
 }
 
 #stats {
@@ -252,6 +260,7 @@ a {
 .ais-RefinementList-labelText,
 .ais-RefinementList-labelText:hover {
   color: black;
+  cursor: pointer;
 }
 
 .ais-RefinementList-count {
@@ -271,12 +280,15 @@ a {
   margin-left: .5em;
 }
 
-.ais-RefinementList-item--selected .ais-RefinementList-labelText,
+.ais-RefinementList-item--selected .ais-RefinementList-label {
+  font-weight: 700;
+}
+
 .ais-RefinementList-item--selected .ais-RefinementList-count {
   font-weight: normal;
 }
 
-.ais-Pagination {
+.ais-Pagination-list {
   display: flex;
   margin: 0 0 16px;
   padding: 0;
@@ -381,8 +393,4 @@ footer {
 
 #pagination:empty:before {
   content: "Uncomment the pagination widget to add pagination.";
-}
-
-[class^=ais-] {
-  font-size: inherit;
 }

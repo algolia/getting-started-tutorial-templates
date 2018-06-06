@@ -21,7 +21,7 @@ class App extends Component {
         indexName="demo_media"
       >
         <main className="search-container">
-          <Configure hitsPerPage={3} attributesToSnippet={['content:14']} />
+          <Configure hitsPerPage={3} attributesToSnippet={['content:14']} snippetEllipsisText={" [...]"} />
           <div className="left-panel">
             <div id="categories">
               <Panel header="Categories">
