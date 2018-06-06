@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { connectStateResults } from 'react-instantsearch/connectors';
+import { connectStateResults } from 'react-instantsearch-dom';
 
 const Switch = ({ searchResults, hasResultsElement, noResultsElement }) =>
   searchResults && searchResults.nbHits > 0

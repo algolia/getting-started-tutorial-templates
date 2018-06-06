@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connectStats } from 'react-instantsearch/connectors';
+import { connectStats } from 'react-instantsearch-dom';
 
 const Stats = ({ nbHits, processingTimeMS }) => (
   <div className="ais-Stats">

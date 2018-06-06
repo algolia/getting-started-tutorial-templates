@@ -5,7 +5,7 @@ import {
   RefinementList,
   Panel,
   SearchBox,
-} from 'react-instantsearch/dom';
+} from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import Stats from './Stats';
 import Switch from './Switch';

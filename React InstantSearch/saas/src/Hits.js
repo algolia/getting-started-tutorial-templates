@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Highlight } from 'react-instantsearch/dom';
-import { connectHits } from 'react-instantsearch/connectors';
+import { Highlight, connectHits } from 'react-instantsearch-dom';
 
 const data = {
   Contact: {
