@@ -1,0 +1,10 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "browser-sync start --server --files ."
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
