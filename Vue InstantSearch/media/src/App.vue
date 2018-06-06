@@ -116,7 +116,7 @@
         </div>
       </div>
     </main>
-    <footer>Source Code on <a href="#">Github</a></footer>
+    <footer>Source Code on <a href="#">GitHub</a></footer>
   </ais-index>
 </template>
 

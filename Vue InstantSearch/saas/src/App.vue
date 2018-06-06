@@ -38,7 +38,7 @@
         </div>
       </div>
     </main>
-    <footer>Source Code on <a href="#">Github</a> - Powered by <a href="https://www.algolia.com">Algolia</a>
+    <footer>Source Code on <a href="#">GitHub</a> - Powered by <a href="https://www.algolia.com">Algolia</a>
     </footer>
   </ais-index>
 </template>
