@@ -1,6 +1,6 @@
 {
-  "short_name": "saas",
-  "name": "saas Sample",
+  "short_name": "SaaS demo",
+  "name": "Algolia Vue InstantSearch SaaS demo",
   "icons": [
     {
       "src": "favicon.png",
