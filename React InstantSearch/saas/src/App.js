@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {
   InstantSearch,
+  Configure,
   RefinementList,
   Panel,
   SearchBox,
 } from 'react-instantsearch/dom';
 import PropTypes from 'prop-types';
 import Stats from './Stats';
+import Hits from './Hits';
 import './App.css';
 
 class App extends Component {
@@ -17,6 +19,7 @@ class App extends Component {
         apiKey="aadef574be1f9252bb48d4ea09b5cfe5"
         indexName="demo_saas"
       >
+        <Configure hitsPerPage={4} distinct={3} />
         <main className="search-container">
           <div className="left-panel">
             <div id="type">
@@ -32,7 +35,9 @@ class App extends Component {
             <div id="stats">
               <Stats />
             </div>
-            <div id="hits">Hits</div>
+            <div id="hits">
+              <Hits />
+            </div>
           </div>
         </main>
         <footer>

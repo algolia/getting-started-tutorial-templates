@@ -159,6 +159,53 @@ a {
   flex-grow: 1;
 }
 
+.hit {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.hit h2 {
+  margin: 16px 16px 8px;
+  font-size: inherit;
+  font-weight: bolder;
+}
+
+.hit .table-responsive {
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.hit .table-responsive th,
+.hit .table-responsive td {
+  white-space: nowrap;
+}
+
+.hit table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hit table em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.hit table th,
+.hit table td {
+  padding: 8px 16px;
+}
+
+.hit table th {
+  color: #999;
+  text-align: left;
+  font-weight: normal;
+}
+
+.hit table tr:nth-child(even) {
+  background: #f5f5fa;
+}
+
 .ais-Panel-header {
   font-weight: bolder;
   margin: 0;
@@ -212,6 +259,7 @@ footer {
 }
 
 /* Placeholders */
+
 #searchbox:empty:before,
 #hits:empty:before,
 #type:empty:before,
