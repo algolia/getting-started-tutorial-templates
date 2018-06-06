@@ -1,5 +1,5 @@
 import React from 'react';
-import {Highlight} from 'react-instantsearch-dom';
+import {Highlight, Snippet} from 'react-instantsearch-dom';
 
 export default ({hit}) => <div>
 <article>
@@ -18,7 +18,7 @@ export default ({hit}) => <div>
       </a>
     </h2>
     <div className="post-excerpt">
-      {hit._snippetResult.content.value}
+      <Snippet attribute="content" hit={hit} />
     </div>
     <div className="entry-meta clear">
       <div className="author-gravatar">
@@ -26,7 +26,7 @@ export default ({hit}) => <div>
       </div>
       <div className="entry-author-content">
         <div className="author-name">
-          {hit._highlightResult.author_name.value}
+          <Highlight attribute="author_name" hit={hit} tagName="mark" />
         </div>
         <div className="post-meta-info">
           {hit.time_to_read} min read in <Highlight attribute="categories" hit={hit} tagName="mark" />
