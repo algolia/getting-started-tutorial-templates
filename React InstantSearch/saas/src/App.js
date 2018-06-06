@@ -8,6 +8,7 @@ import {
 } from 'react-instantsearch/dom';
 import PropTypes from 'prop-types';
 import Stats from './Stats';
+import Switch from './Switch';
 import Hits from './Hits';
 import './App.css';
 
@@ -33,7 +34,10 @@ class App extends Component {
               <SearchBox translations={{ placeholder: 'Search in your CRM' }} />
             </div>
             <div id="stats">
-              <Stats />
+              <Switch
+                hasResultsElement={<Stats />}
+                noResultsElement={<p>No results.</p>}
+              />
             </div>
             <div id="hits">
               <Hits />
