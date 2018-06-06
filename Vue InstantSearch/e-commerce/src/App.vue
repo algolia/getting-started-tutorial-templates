@@ -64,22 +64,7 @@
         <div id="hits">
           <ais-results class="ais-hits">
             <template slot-scope="{ result }">
-              <div class="ais-hits--item">
-                <div class="hit">
-                  <div class="hit-image">
-                    <img :src="result.image" />
-                  </div>
-                  <div class="hit-content">
-                    <div class="hit-name">
-                      <ais-highlight :result="result" attribute-name="name"></ais-highlight>
-                    </div>
-                    <div class="hit-description">
-                      <ais-snippet :result="result" attribute-name="description"></ais-snippet>
-                    </div>
-                    <div class="hit-price">${{ result.price }}</div>
-                  </div>
-                </div>
-              </div>
+              <hits :result="result"></hits>
             </template>
           </ais-results>
         </div>
@@ -95,5 +80,13 @@
     </main>
   </ais-index>
 </template>
+
+<script>
+import Hits from './Hits'
+
+export default {
+  components: { Hits }
+}
+</script>
 
 <style src="./styles.css"></style>
