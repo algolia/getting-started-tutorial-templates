@@ -245,8 +245,8 @@ a {
   padding: 8px 16px;
 }
 
-.ais-RefinementList-label,
-.ais-RefinementList-label:hover {
+.ais-RefinementList-labelText,
+.ais-RefinementList-labelText:hover {
   color: black;
 }
 
@@ -263,7 +263,11 @@ a {
   margin: 0;
 }
 
-.ais-RefinementList-item--selected .ais-RefinementList-label,
+.ais-RefinementList-labelText {
+  margin-left: .5em;
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-labelText,
 .ais-RefinementList-item--selected .ais-RefinementList-count {
   font-weight: normal;
 }
@@ -280,6 +284,10 @@ a {
   border: none;
   box-shadow: none;
   flex-wrap: wrap;
+}
+
+.ais-Pagination-link {
+  display: block;
 }
 
 .ais-Pagination-item,
