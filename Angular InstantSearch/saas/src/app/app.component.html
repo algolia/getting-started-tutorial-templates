@@ -19,11 +19,10 @@
       <ais-hits [transformItems]="groupByType">
         <ng-template let-hits="hits" let-results="results">
           <!-- No results message -->
-          <div *ngIf="hits.length === 0">
+          <div *ngIf="hits.isEmpty">
             No results found matching
             <strong>{{results.query}}</strong>.
           </div>
-
 
           <div class="hit" *ngIf="hits['Contact']">
             <h2>Contacts</h2>

@@ -26,6 +26,7 @@ export class AppComponent {
         newItems[item.type].push(item);
       }
     });
+    newItems['isEmpty'] = Object.keys(newItems).length === 0;
     return newItems;
   }
 }
