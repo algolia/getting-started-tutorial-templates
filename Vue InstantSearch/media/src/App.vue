@@ -78,7 +78,7 @@
                         </div>
                         <div class="post-meta-info">
                           {{ result.time_to_read }} min read in
-                          <span v-html="result.categories[0]">{{ result._highlightResult.categories[0].value }}</span>
+                          <span v-html="result._highlightResult.categories[0].value"></span>
                         </div>
                       </div>
                     </div>
