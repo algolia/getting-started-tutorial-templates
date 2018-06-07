@@ -17,7 +17,7 @@ This repository holds the templates used in Algolia's [getting started tutorial]
 - E-commerce
   - ✅ [InstantSearch.js](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/InstantSearch.js/e-commerce)
   - ✅ [React InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/React%20InstantSearch/e-commerce)
-  - ⏳ [Vue InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Vue%20InstantSearch/e-commerce)
+  - ✅ [Vue InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Vue%20InstantSearch/e-commerce)
   - ✅ [Angular InstantSearch](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/Angular%20InstantSearch/e-commerce)
 - Geo
   - ✅ [InstantSearch.js](https://codesandbox.io/s/github/algolia/getting-started-tutorial-templates/tree/master/InstantSearch.js/geo)
