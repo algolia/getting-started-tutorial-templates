@@ -12,10 +12,10 @@
     <main class="search-container">
       <div class="left-panel">
         <div id="categories">
-          <refinement-list attribute-name="categories" header-title="Categories"></refinement-list>
+          <refinement-list attribute-name="categories" header-title="Categories"/>
         </div>
         <div id="brands">
-          <refinement-list attribute-name="brand" header-title="Brands"></refinement-list>
+          <refinement-list attribute-name="brand" header-title="Brands"/>
         </div>
       </div>
       <div class="right-panel">
