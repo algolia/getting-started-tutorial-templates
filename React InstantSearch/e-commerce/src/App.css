@@ -20,8 +20,14 @@ body {
   font-size: 14px;
   line-height: 24px;
   overflow-y: scroll;
+  display: flex;
   font-family: "Open Sans", sans-serif;
   background: #f0f2f5;
+  flex-direction: column;
+}
+
+[class^=ais-] {
+  font-size: inherit;
 }
 
 a {
@@ -32,6 +38,7 @@ a {
 .ais-Snippet-highlighted {
   font-style: normal;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .ais-InstantSearch__root {
@@ -54,6 +61,13 @@ a {
   }
 }
 
+#brands .ais-SearchBox-input {
+  padding: 8px 16px 8px 24px;
+  box-shadow: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+}
+
 #categories,
 #brands {
   margin-bottom: 24px;
@@ -68,6 +82,7 @@ a {
 
 #categories,
 #brands,
+#price,
 .ais-Hits-item,
 .ais-SearchBox-input {
   height: auto;
@@ -101,11 +116,10 @@ a {
   flex-grow: 0;
 }
 
-.ais-search-box {
+.ais-SearchBox {
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 100%;
 }
 
 .ais-SearchBox-submit,
@@ -114,6 +128,9 @@ a {
   top: 0;
   left: inherit;
   margin: 14px 16px;
+  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -150,7 +167,6 @@ a {
   border: none;
   font-family: inherit;
   line-height: inherit;
-  font-size: inherit;
 }
 
 #stats {
@@ -161,6 +177,7 @@ a {
 .ais-Stats {
   font-size: 12px;
   color: #697782;
+  opacity: 1;
 }
 
 #hits {
@@ -264,6 +281,48 @@ a {
   font-weight: normal;
 }
 
+.ais-RangeSlider .rheostat-handle {
+  width: 19px;
+  height: 19px;
+  border: solid 2px #5468ff;
+  top: -6px;
+  margin-left: -10px;
+}
+
+.ais-RangeSlider {
+  margin: 32px 16px;
+}
+
+.ais-RangeSlider .rheostat-horizontal .rheostat-handle {
+  top: -6px;
+}
+
+.ais-RangeSlider .rheostat-progress {
+  height: 5px;
+  top: 1px;
+  background: #5468ff;
+}
+
+.ais-RangeSlider--marker {
+  display: none;
+}
+
+.ais-RangeSlider--body {
+  padding: 0 11px 0 16px;
+}
+
+.ais-RangeSlider .rheostat-background {
+  height: 3px;
+  top: 2px;
+  width: 100%;
+  background-color: #ddd;
+  border: none;
+}
+
+.ais-RangeSlider--tooltip {
+  background: transparent;
+}
+
 .ais-Pagination-list {
   display: flex;
   margin: 0 0 16px;
@@ -308,9 +367,10 @@ a {
 
 .ais-Pagination-item .ais-Pagination-link,
 .ais-Pagination-item--disabled .ais-Pagination-link {
+  padding: 6px 16px;
   text-decoration: none;
   color: #fff;
-  line-height: 32px;
+  line-height: 20px;
 }
 
 footer {
@@ -369,8 +429,4 @@ footer {
 
 #pagination:empty:before {
   content: "Uncomment the pagination widget to add pagination.";
-}
-
-[class^=ais-] {
-  font-size: inherit;
 }
