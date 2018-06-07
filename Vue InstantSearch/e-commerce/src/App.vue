@@ -12,14 +12,10 @@
     <main class="search-container">
       <div class="left-panel">
         <div id="categories">
-          <ais-refinement-list attribute-name="categories">
-            <div slot="header" class="ais-refinement-list--header">Categories</div>
-          </ais-refinement-list>
+          <refinement-list attribute-name="categories" header-title="Categories"></refinement-list>
         </div>
         <div id="brands">
-          <ais-refinement-list attribute-name="brand">
-            <div slot="header" class="ais-refinement-list--header">Brands</div>
-          </ais-refinement-list>
+          <refinement-list attribute-name="brand" header-title="Brands"></refinement-list>
         </div>
       </div>
       <div class="right-panel">
@@ -62,9 +58,10 @@
 
 <script>
 import Hits from './components/Hits'
+import RefinementList from './components/RefinementList'
 
 export default {
-  components: { Hits }
+  components: { Hits, RefinementList }
 }
 </script>
 
