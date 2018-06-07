@@ -144,7 +144,7 @@ export default {
   font-weight: normal;
 }
 
-.hit table tr:nth-child(even) {
+.hit tbody tr:nth-child(odd) {
   background: #f5f5fa;
 }
 </style>
