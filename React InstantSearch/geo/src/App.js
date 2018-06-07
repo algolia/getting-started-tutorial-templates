@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { InstantSearch, Hits, Configure } from 'react-instantsearch-dom';
+import {
+  InstantSearch,
+  Hits,
+  Configure,
+  SearchBox,
+} from 'react-instantsearch-dom';
 import Hit from './Hit';
 import './App.css';
 
@@ -25,7 +30,13 @@ class App extends Component {
             </div>
           </div>
           <div className="right-panel">
-            <div id="searchbox">SearchBox</div>
+            <div id="searchbox">
+              <SearchBox
+                translations={{
+                  placeholder: 'Search airports by name, city, airport code',
+                }}
+              />
+            </div>
             <div id="stats">Stats</div>
             <div id="map">Maps</div>
           </div>

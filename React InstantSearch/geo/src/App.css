@@ -30,7 +30,7 @@ a {
   color: #5468ff;
 }
 
-.highlight {
+.ais-Highlight-highlighted {
   font-style: normal;
   font-weight: bold;
 }
@@ -71,25 +71,25 @@ a {
 }
 
 .ais-Hits-item,
-.ais-search-box--input {
+.ais-SearchBox-input {
   height: auto;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.ais-search-box--input:focus {
+.ais-SearchBox-input:focus {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.ais-search-box {
+.ais-SearchBox {
   position: relative;
   height: auto;
   width: 100%;
 }
 
-.ais-search-box--magnifier,
-.ais-search-box--reset {
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
   position: absolute;
   top: 0;
   left: inherit;
@@ -97,37 +97,38 @@ a {
   cursor: pointer;
 }
 
-.ais-search-box--magnifier svg,
-.ais-search-box--reset svg {
+.ais-SearchBox-submitIcon,
+.ais-SearchBox-resetIcon {
   width: 13px;
   height: 13px;
   display: block;
 }
 
-.ais-search-box--magnifier svg {
+.ais-SearchBox-submitIcon {
   fill: #5468ff;
 }
 
-.ais-search-box--reset svg {
+.ais-SearchBox-resetIcon {
   fill: #ed5a6a;
 }
 
-.ais-search-box--magnifier {
+.ais-SearchBox-submit {
   right: 0;
 }
 
-.ais-search-box--reset {
+.ais-SearchBox-reset {
   background: none;
   padding: 0;
   border: none;
   right: 30px;
 }
 
-.ais-search-box--input {
+.ais-SearchBox-input {
   width: 100%;
   padding: 8px 16px;
   font-weight: normal;
   border: none;
+  font: inherit;
 }
 
 #stats {
