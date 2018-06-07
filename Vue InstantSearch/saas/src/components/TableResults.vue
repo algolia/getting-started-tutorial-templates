@@ -30,11 +30,8 @@
                   :attribute-name="key"
                   :result="result"
                   v-if="result._highlightResult[key]"
-                >
-                </ais-highlight>
-                <span v-else>
-                  {{ value }}
-                </span>
+                />
+                <span v-else>{{ value }}</span>
               </td>
             </tr>
           </tbody>
@@ -45,7 +42,7 @@
 </template>
 
 <script>
-import { Component } from 'vue-instantsearch';
+import { Component } from 'vue-instantsearch'
 
 export default {
   props: {
@@ -104,7 +101,6 @@ export default {
 </script>
 
 <style>
-
 .hit {
   margin-bottom: 24px;
   overflow: hidden;
