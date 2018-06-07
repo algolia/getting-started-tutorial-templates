@@ -23,13 +23,15 @@
           <ais-search-box placeholder="Search for products" class="ais-search-box"/>
         </div>
         <div id="stats">
-          <ais-stats>
-            <template slot-scope="{ totalResults, processingTime, query, resultStart, resultEnd }">
-              ⚡️ <strong>{{ totalResults }}</strong> results found
-              <span v-if="query !== ''">for <strong>"{{ query }}"</strong></span>
-              in <strong>{{ processingTime }}ms</strong>
-            </template>
-          </ais-stats>
+          <div>
+            <ais-stats>
+              <template slot-scope="{ totalResults, processingTime, query, resultStart, resultEnd }">
+                ⚡️ <strong>{{ totalResults }}</strong> results found
+                <span v-if="query !== ''">for <strong>"{{ query }}"</strong></span>
+                in <strong>{{ processingTime }}ms</strong>
+              </template>
+            </ais-stats>
+          </div>
         </div>
         <div id="hits">
           <ais-results class="ais-hits">
