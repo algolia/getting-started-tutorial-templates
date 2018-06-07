@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { InstantSearch } from 'react-instantsearch-dom';
+import { InstantSearch, Hits, Configure } from 'react-instantsearch-dom';
+import Hit from './Hit';
 import './App.css';
 
 class App extends Component {
@@ -10,9 +11,18 @@ class App extends Component {
         apiKey="aadef574be1f9252bb48d4ea09b5cfe5"
         indexName="demo_geo"
       >
+        <Configure
+          hitsPerPage={6}
+          getRankingInfo
+          aroundLatLngViaIP
+          typoTolerance="min"
+        />
+
         <main className="search-container">
           <div className="left-panel">
-            <div id="hits">Hits</div>
+            <div id="hits">
+              <Hits hitComponent={Hit} />
+            </div>
           </div>
           <div className="right-panel">
             <div id="searchbox">SearchBox</div>
