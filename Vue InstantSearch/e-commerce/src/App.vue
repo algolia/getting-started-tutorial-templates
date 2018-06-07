@@ -58,11 +58,11 @@
 </template>
 
 <script>
-import Hits from './Hits'
+import Hits from './components/Hits'
 
 export default {
   components: { Hits }
 }
 </script>
 
-<style src="./styles.css"></style>
+<style src="./assets/styles.css"></style>
