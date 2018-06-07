@@ -6,9 +6,7 @@
     :query-parameters="{
       hitsPerPage: 5,
       attributesToSnippet: ['description:24'],
-      snippetEllipsisText: ' [...]',
-      highlightPreTag: '<em class=\'highlight\'>',
-      highlightPostTag: '</em>'
+      snippetEllipsisText: ' [...]'
     }"
   >
     <main class="search-container">
