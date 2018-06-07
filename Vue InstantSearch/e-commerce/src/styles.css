@@ -229,17 +229,17 @@ a {
   margin-bottom: 16px;
 }
 
-.ais-refinement-list--item {
+.ais-refinement-list__item {
   padding: 8px 16px;
 }
 
-.ais-refinement-list--label,
-.ais-refinement-list--label:hover {
+.ais-refinement-list__label,
+.ais-refinement-list__label:hover {
   color: black;
   cursor: pointer;
 }
 
-.ais-refinement-list--count {
+.ais-refinement-list__count {
   background: none;
   padding: 0;
   font-size: 12px;
@@ -248,15 +248,15 @@ a {
   float: right;
 }
 
-.ais-refinement-list--checkbox {
+.ais-refinement-list__checkbox {
   margin: 0 4px 0 0;
 }
 
-.ais-refinement-list--item__active .ais-refinement-list--label {
+.ais-refinement-list__item--active .ais-refinement-list__label {
   font-weight: 700;
 }
 
-.ais-refinement-list--item__active .ais-refinement-list--count {
+.ais-refinement-list__item--active .ais-refinement-list__count {
   font-weight: normal;
 }
 

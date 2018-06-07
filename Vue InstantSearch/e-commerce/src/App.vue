@@ -14,30 +14,12 @@
     <main class="search-container">
       <div class="left-panel">
         <div id="categories">
-          <ais-refinement-list
-            attribute-name="categories"
-            :class-names="{
-              'ais-refinement-list__item': 'ais-refinement-list--item',
-              'ais-refinement-list__label': 'ais-refinement-list--label',
-              'ais-refinement-list__checkbox': 'ais-refinement-list--checkbox',
-              'ais-refinement-list__count' : 'ais-refinement-list--count',
-              'ais-refinement-list__item--active': 'ais-refinement-list--item__active'
-            }"
-          >
+          <ais-refinement-list attribute-name="categories">
             <div slot="header" class="ais-refinement-list--header">Categories</div>
           </ais-refinement-list>
         </div>
         <div id="brands">
-          <ais-refinement-list
-            attribute-name="brand"
-            :class-names="{
-              'ais-refinement-list__item': 'ais-refinement-list--item',
-              'ais-refinement-list__label': 'ais-refinement-list--label',
-              'ais-refinement-list__checkbox': 'ais-refinement-list--checkbox',
-              'ais-refinement-list__count' : 'ais-refinement-list--count',
-              'ais-refinement-list__item--active': 'ais-refinement-list--item__active'
-            }"
-          >
+          <ais-refinement-list attribute-name="brand">
             <div slot="header" class="ais-refinement-list--header">Brands</div>
           </ais-refinement-list>
         </div>
