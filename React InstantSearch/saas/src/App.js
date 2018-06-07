@@ -43,10 +43,6 @@ class App extends Component {
             </div>
           </div>
         </main>
-        <footer>
-          Source Code on <a href="#">GitHub</a> - Powered by{' '}
-          <a href="https://www.algolia.com">Algolia</a>
-        </footer>
       </InstantSearch>
     );
   }

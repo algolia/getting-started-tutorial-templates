@@ -30,6 +30,8 @@ a {
   color: #5468ff;
 }
 
+#root,
+.ais-InstantSearch__root,
 .search-container {
   flex-grow: 1;
   display: flex;
