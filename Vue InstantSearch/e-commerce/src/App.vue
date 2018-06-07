@@ -41,6 +41,11 @@
               <hits :result="result"></hits>
             </template>
           </ais-results>
+          <ais-no-results>
+            <template slot-scope="props">
+              No results found for <strong>{{ props.query }}</strong>.
+            </template>
+          </ais-no-results>
         </div>
         <div id="pagination">
           <ais-pagination>
