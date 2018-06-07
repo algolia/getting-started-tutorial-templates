@@ -191,7 +191,6 @@ a {
   font-weight: normal;
   border: none;
   -webkit-appearance: none;
-  appearance: none;
 }
 
 .ais-input::-webkit-search-cancel-button {
