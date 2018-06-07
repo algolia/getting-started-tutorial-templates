@@ -6,6 +6,7 @@ import {
   SearchBox,
 } from 'react-instantsearch-dom';
 import Hit from './Hit';
+import Stats from './Stats';
 import './App.css';
 
 class App extends Component {
@@ -37,7 +38,9 @@ class App extends Component {
                 }}
               />
             </div>
-            <div id="stats">Stats</div>
+            <div id="stats">
+              <Stats />
+            </div>
             <div id="map">Maps</div>
           </div>
         </main>
