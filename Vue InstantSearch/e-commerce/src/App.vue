@@ -36,7 +36,7 @@
         <div id="hits">
           <ais-results class="ais-hits">
             <template slot-scope="{ result }">
-              <hits :result="result"></hits>
+              <hit :result="result"/>
             </template>
           </ais-results>
           <ais-no-results>
@@ -59,11 +59,11 @@
 </template>
 
 <script>
-import Hits from './components/Hits'
+import Hit from './components/Hit'
 import RefinementList from './components/RefinementList'
 
 export default {
-  components: { Hits, RefinementList }
+  components: { Hit, RefinementList }
 }
 </script>
 
