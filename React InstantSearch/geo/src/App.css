@@ -35,7 +35,9 @@ a {
   font-weight: bold;
 }
 
-.search-container {
+#root,
+.search-container,
+.ais-InstantSearch__root {
   flex-grow: 1;
   display: flex;
   width: 960px;
@@ -180,6 +182,11 @@ a {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 24px;
+}
+
+.ais-Maps {
+  height: 100%;
+  width: 100%;
 }
 
 footer {

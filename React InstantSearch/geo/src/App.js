@@ -7,6 +7,7 @@ import {
 } from 'react-instantsearch-dom';
 import Hit from './Hit';
 import Stats from './Stats';
+import GoogleMaps from './GoogleMaps';
 import './App.css';
 
 class App extends Component {
@@ -41,7 +42,9 @@ class App extends Component {
             <div id="stats">
               <Stats />
             </div>
-            <div id="map">Maps</div>
+            <div id="map">
+              <GoogleMaps />
+            </div>
           </div>
         </main>
       </InstantSearch>
