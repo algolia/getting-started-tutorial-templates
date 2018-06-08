@@ -32,6 +32,7 @@ a {
 .ais-Snippet-highlighted {
   font-style: normal;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .ais-InstantSearch__root {
